@@ -1,0 +1,78 @@
+/* تنسيق اللوجو */
+.logo {
+    display: block;
+    margin: 20px auto;
+    width: 150px; /* تعديل الحجم حسب الحاجة */
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* خلفية وتأثيرات لصفحة التواصل */
+.contact-page {
+    background: url('لاشؤن.jpg'); /* صورة الخلفية */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* تأثيرات الانتقال */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* تصميم معلومات التواصل */
+#contact-info {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    width: 350px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* تنسيق الروابط */
+#contact-info a {
+    color: #4db8ff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#contact-info a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/* زر الرجوع للصفحة الرئيسية */
+#back-home {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: grey;
+}

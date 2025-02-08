@@ -1,0 +1,54 @@
+/* تنسيق عام */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* تنسيق الهيدر */
+header {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    animation: fadeInDown 1s ease-in-out;
+}
+
+/* حركة نزول من الأعلى */
+@keyframes fadeInDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* تصميم المنتجات */
+#products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    width: 220px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.product h3 {
+    margin: 10px 0;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}

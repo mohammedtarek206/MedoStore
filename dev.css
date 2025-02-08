@@ -1,0 +1,96 @@
+/* خلفية ستايل "طرش" لصفحة المطور */
+.developer-page {
+    background: url('white.jpg'); /* صورة الطرش */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: black;
+}
+
+/* تأثيرات الانتقال */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* تأثير دخول الصورة */
+.slide-in {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInLeft 1s ease-in-out forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* تنسيق صفحة المطور */
+#developer-info {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    width: 350px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* تنسيق صورة المطور */
+#developer-info img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: px;
+    border: 3px solid white;
+}
+
+/* تنسيق الروابط */
+#developer-info a {
+    color: #4db8ff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#developer-info a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/* زر الرجوع للصفحة الرئيسية */
+#back-home {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 28px;
+    transition: 0.5s;
+}
+
+.back-button:hover {
+    background: grey;
+}
